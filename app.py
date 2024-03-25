@@ -36,7 +36,6 @@ def input_image_setup(uploaded_file):
 
 
 # initialize our streamlit app
-
 st.set_page_config(page_title="Invoice extractor")
 st.header("GEMINI Application")
 input = st.text_input("Input prompt:", key="input")
@@ -50,7 +49,7 @@ if uploaded_file is not None:
 
 
 input_prompt = '''
-you are expert in uderstanding invoices. you will recieve input images as invoices and you will have to answer questions based on input image.
+you are expert in understanding invoices. you will recieve input images as invoices and you will have to answer questions based on input image.
 '''
 
 
